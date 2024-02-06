@@ -91,4 +91,10 @@ export class NotificationdetailComponent implements OnInit, AfterViewInit {
   downloadData(){
    return new AngularCsv(this.dataSource, 'My Report');
   }
+
+  resetData() {
+    this.selectedClientName = ''
+    this.selectedVerticalName = ''
+    this.selectedDate = ''
+  }
 }
